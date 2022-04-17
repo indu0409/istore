@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>istore</title>
+        <link rel="stylesheet" type="text/css" href="style1.css">
+        <script>
+
+            const cookieBox=document.querySelector(".wrapper"),
+            acceptbtn=cookieBox.querySelector(".buttons button");
+            acceptbtn.onclick=()=>{
+                document.cookie="CookieBy=istore; max-age="+60*60*24*30;
+                if(document.cookie){
+                    cookieBox.classList.add("hide");
+                }
+                else{
+                    alert("cookie cant be set");
+                }
+            }
+            let checkcookie=document.cookie.indexOf("CookieBy=istore");
+            checkcookie !=1 ? cookieBox.classList.add("hide"):cookieBox.classList.remove("hide");
+        </script>
+    </head>
+    <body>
+        <nav>
+           <p>istore</p>
+                <ul>
+                    <li>
+                      <a href="#home">Home</a>
+                    </li>
+                    <li>
+                     <a href="#about us">  about us</a>
+                        <ul>
+                            <li><a href="#">our vision</a></li>
+                            <li><a href="#">headquarters</a></li>
+                            <li><a href="#">Services</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#offers">offers</a>
+                    </li>
+                    <li>
+                        <a href="#support us">support us</a>
+                    </li>
+                    <li>
+                       <a href="#contact us">contact us</a>
+                    </li>
+                    <li>
+                        <a href="#join us">Join us</a>
+                    </li>
+                </ul>
+               
+        </nav>
+        <div class="banner-card">
+            <img src="girl.jpg"> 
+            <h2>new way to explore books. read reviews and get your book now.</h2>
+            <button>explore books</button>
+        </div>
+        
+        <div class="wrapper">
+           <img src="ck.png" alt="">
+                <div class="content">
+                 <header>we use cookie</header>
+                  <p>We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also disclose
+                 information about your use of our site with our social media, advertising and analytics partners</p>
+                <div class="buttons">
+                    <button class="item">I understand</button>
+                    <a href="#">Learn More</a>
+                </div>
+                 
+            </div>
+            
+
+        </div>
+
+        <div class="container">
+            <img src="h2.jpg" class="logo">
+            <div class="c">
+               <p>website is under maintenance</p> 
+               <h1> we are <span>launching </span>soon</h1>
+               <div class="launch-time">
+                   <p>00</p>
+                   <span>days</span>
+                   <p>00</p>
+                   <span>hours</span>
+                   <p>00</p>
+                   <span>minutes</span>
+                   <p>00</p>
+                   <span>seconds</span>
+               </div>
+               <button type="button">Learn more</button>
+            </div>
+        </div>
+    </body>
+</html>
